@@ -82,7 +82,7 @@ for(sp1 in organisms_list) {
 
 TR_tree = nj( TR_distances_with_errors_normalized )
 TR_div = sum(TR_tree$edge.length)
-
+control_tree = TR_tree
 #### translatome layer divergence calculations, corrected ####
 
 RP_distances_with_errors = crossing( sp1 = organisms_list, sp2 = organisms_list ) %>%
